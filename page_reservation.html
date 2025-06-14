@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="fich.js"></script>
+</head>
+
+<main>
+      
+<h1>Hôtels à Bobo-Dioulasso</h1>
+
+<div class="hotel-gallery">
+  <div class="hotel-card">
+      <img width="650ko" src="hotelsissiman.jpg" alt="Hôtel 1">
+    <div class="hotel-info">
+      <h2>Hôtel Sissiman</h2>
+      <p>Proche du centre-ville, avec jardin tropical et piscine.</p>
+      <button class="choose-button" onclick="remplirFormulaire('Hotel Sissiman')">Choisir</button>
+    </div>
+    </div>
+  </div><br><br>
+  
+  <div class="hotel-card">
+      <img width="650ko" src="villarose.jpg" alt="Hôtel 2">
+    <div class="hotel-info">
+      <h2>Villa Rose</h2>
+      <p>Hôtel calme avec décoration africaine et service familial.</p>
+      <button class="choose-button" onclick="remplirFormulaire('Villa Rose')">Choisir</button>
+    </div>
+    </div>
+  </div><br><br>
+
+
+  <div class="hotel-card">
+     <img width="650ko" src="ranhotel.jpg" alt="Ran Hôtel Somkiéta">
+    <div class="hotel-info">
+      <h2>Ran Hôtel Somkiéta</h2>
+      <p>Chambres spacieuses, jardin et grande terrasse.</p>
+      <button class="choose-button" onclick="remplirFormulaire('Ran Hotêl Somkiéta')">Choisir</button>
+    </div>
+    </div>
+  </div><br><br>
+
+  <div class="hotel-card">
+     <img width="650ko" src="residencetoucouleur.jpg" alt="La Résidence toucouleurs">
+    <div class="hotel-info">
+      <h2>La Résidence</h2>
+      <p>Lieu calme avec un restaurant gastronomique intégré.</p>
+      <button class="choose-button" onclick="remplirFormulaire('La Résidence')">Choisir</button>
+    </div>
+    </div>
+  </div><br><br>
+
+
+
+  
+
+  <div class="hotel-card">
+   <img width="650ko" src="hoteldioulassoba.jpg" alt="Hôtel dioulassoba">
+    <div class="hotel-info">
+      <h2>hotel Dioulassoba</h2>
+      <p>Confort africain,Simple et économique, proche de la gare routière.</p>
+      <button class="choose-button" onclick="remplirFormulaire('Hotel Dioulassoba')">Choisir</button>
+    </div>
+    </div>
+  </div><br><br>
+
+  <div class="hotel-card">
+     <img width="650ko" src="Ibahotel.jpg" alt="Ibahotel">
+    <div class="hotel-info">
+      <h2>Iba-Hotel</h2>
+      <p>Accueil chaleureux et bon rapport qualité/prix,proche du boulevart</p>
+      <button class="choose-button" onclick="remplirFormulaire('Iba-Hotel')">Choisir</button>
+    </div>
+    </div>
+  </div>
+</div><br><br>
+
+  <div class="hotel-card">
+   <img width="650ko" src="hotelauberge.jpg" alt="hotelauberge">
+    <div class="hotel-info">
+      <h2>Hôtel L’Auberge</h2>
+      <p>Chambres climatisées, restaurant et salle de conférence.</p>
+      <button class="choose-button" onclick="remplirFormulaire('Hôtel L Auberge')">Choisir</button>
+    </div>
+    </div>
+  </div>
+</div><br><br>
+
+
+    <h2>Formulaire d'inscription à une réservation d'hôtel</h2>
+
+<div class="overlay">
+  <h2 class="titre-formulaire">Réservez votre séjour de rêve ✨</h2>
+  <p class="slogan">Des vacances inoubliables, une réservation en toute sérénité.</p>
+  <p class="badge-confiance">✅ +500 clients satisfaits, et vous ?</p>
+</div>
+
+<form action="#" method="post">
+  Nom : <input type="text" name="nom"><br><br>
+  Prénom : <input type="text" name="prenom"><br><br>
+  Email : <input type="email" name="email"><br><br>
+
+  <label for="hotel">Nom de l'hôtel :</label>
+  <input type="text" id="hotel" name="hotel" readonly required><br><br>
+
+  <label for="arrivée">Date d'arrivée :</label>
+  <input type="date" id="arrivée" name="arrivée" required><br><br>
+
+  <label for="depart">Date de départ :</label>
+  <input type="date" id="depart" name="depart" required><br><br>
+
+  <label for="personnes">Nombre de personnes :</label>
+  <input type="number" id="personnes" name="personnes" min="1" required><br><br>
+
+  <label>Allergie ou restriction alimentaire :</label>
+  <textarea name="allergies" rows="2"></textarea><br><br>
+
+  <label>Autres demandes :</label>
+  <textarea name="commentaires" rows="2"></textarea><br><br>
+
+  <label for="chambres">Types de chambre :</label><br>
+  <select name="chambres" id="chambres">
+    <option value="simple">Chambre Simple</option>
+    <option value="double">Chambre Double</option>
+    <option value="twin">Chambre Twin</option>
+    <option value="triple">Chambre Triple</option>
+    <option value="junior-suite">Suite Junior</option>
+    <option value="suite">Suite</option>
+    <option value="familiale">Chambre Familiale</option>
+    <option value="deluxe">Chambre Deluxe</option>
+    <option value="accessible">Chambre Accessible</option>
+  </select><br><br>
+
+  <button type="submit" class="btn-reserver">Réserver maintenant</button>
+  <button type="button" class="btn-annuler" onclick="annulerReservation()">Annuler la réservation</button>
+</form>
+
+<p>Besoin d'aide ? Notre équipe est disponible 24h/24 (Numéro mobile de l'hôtel : +226 00000000)</p>
+<p>CODE Wifi disponible : 2122@pam</p>
+<p>Nous vous remercions pour votre confiance.</p>
+<footer>
+    <P>&copy; 2025 Ville de Bobo-Dioulasso - Site réalisé par <strong>MEDA Grace-Léticia & SIDIBE Ibrahim</strong></P>
+   <p>Contact : <a href="mailto:info@bobotourisme.bf" style="color:aquamarine;">info@bobotourisme.bf</a></p>
+</footer>
+</main>

@@ -1,0 +1,112 @@
+
+body {
+    background-color:rosybrown; 
+}
+footer{
+  text-align:end;
+}
+h1{
+    text-align:justify;
+    text-indent: 50px;
+    text-decoration:underline;
+    text-transform: uppercase;
+}
+.hotel-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .hotel-card img {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .hotel-card:hover {
+      transform: scale(1.03);
+    }
+    
+    .hotel-info {
+      padding: 15px;
+    }
+    .hotel-info h2 {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+    .hotel-info p {
+      font-size: 14px;
+      color: #666;
+    }
+.titre-formulaire {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.slogan {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.badge-confiance, .bonus {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.badge-confiance {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 500;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.btn-reserver, .btn-annuler {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-reserver {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-annuler {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.btn-reserver:hover {
+  background-color: #388e3c;
+}
+
+.btn-annuler:hover {
+  background-color: #cc0000;
+}
